@@ -2,7 +2,7 @@ public class Main {
 
     public static void main(String[] args) {
         // Test data set that will cover all eventualities
-        String[] months = { "Jan", "february", "march", "apr", "May", "June ",
+        String[] months = { "Jan", "Decadence", "february", "march", "apr", "May", "June ", "sept",
                 "July", "august", "Sep", "oct", "November", "December", "Java", "Programming", "June   ", "  August " };
         // iterate through each string in the array
         for (String month : months) {

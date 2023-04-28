@@ -7,46 +7,21 @@ public class DateConverter {
      * */
 
     public static int getMonthNumber(String month) {
-        switch (month.toLowerCase().strip()) {
-            case "jan":
-            case "january":
-                return 1;
-            case "feb":
-            case "february":
-                return 2;
-            case "mar":
-            case "march":
-                return 3;
-            case "apr":
-            case "april":
-                return 4;
-            case "may":
-                return 5;
-            case "jun":
-            case "june":
-                return 6;
-            case "jul":
-            case "july":
-                return 7;
-            case "aug":
-            case "august"
-                return 8;
-            case "sep":
-            case "sept":
-            case "september":
-                return 9;
-            case "oct":
-            case "october":
-                return 10;
-            case "nov":
-            case "november":
-                return 11;
-            case "dec":
-            case "december":
-                return 12;
-            default:
-                return 0;
-        }
+        return switch (month.toLowerCase().strip()) {
+            case "jan", "january" -> 1;
+            case "feb", "february" -> 2;
+            case "mar", "march" -> 3;
+            case "apr", "april" -> 4;
+            case "may" -> 5;
+            case "jun", "june" -> 6;
+            case "jul", "july" -> 7;
+            case "aug", "august" -> 8;
+            case "sep", "sept", "september" -> 9;
+            case "oct", "october" -> 10;
+            case "nov", "november" -> 11;
+            case "dec", "december" -> 12;
+            default -> 0;
+        };
 
 
     }
